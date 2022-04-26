@@ -1,0 +1,24 @@
+.header {
+    
+    position: static;
+    height: 20px;
+    left: 0%;
+    right: 0%;
+    // top: calc(50% - 20px/2 - 16px);
+    
+    font-family: 'Raleway';
+    // font-style: normal;
+    // font-weight: 600;
+    // font-size: 16px;
+    // line-height: 100%;
+    /* identical to box height, or 19px */
+    
+    display: flex;
+    // align-items: flex-start;
+    // text-align: right;
+    text-transform: uppercase;
+    
+    /* --c-primary */
+    
+    // color: #5ECE7B;
+    }
