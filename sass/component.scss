@@ -1,21 +1,89 @@
-.category {
-    
-}
-.category__img {
-    &-size {
-        width: 35.6rem;
-        height: 33.8rem;
-        top: -0.5rem;
+.section {
+    margin: 10rem;
+
+    &__name {
+
+    }
+    &__name-category {
+      
+
+        font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 160%;
+
     }
 }
 
-.overlay {
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    font-family: 'Raleway', sans-serif;
-    color: #8D8F9A;
-    line-height: 160%;
-    font-weight: 400;
-    align-items: center;
+
+
+.category {
     display: flex;
+    gap: 2.5rem;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    &__img {
+        margin: 10.3rem 0rem 0rem 0rem;
+        position: relative;
+        // width: 35.6rem;
+        // height: 33.8rem;
+        &-overlay {
+            text-transform: uppercase;
+            font-size: 2.4rem;
+            font-family: 'Raleway', sans-serif;
+            color: #8D8F9A;
+            line-height: 160%;
+            font-weight: 400;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            left: 25.42%;
+            right: 25.71%;
+            top: 44.24%;
+            bottom: 43.94%;
+        }
+        &-size_opacity {
+            width: 35.6rem;
+            height: 33.8rem;
+            top: -0.5rem;
+            opacity: 0.5;
+        }
+        &-size {
+            width: 35.6rem;
+            height: 33.8rem;
+            top: -0.5rem;
+            // opacity: 0.5;
+        }
+        
+    }
+}
+.item_name {
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    
+    &__opacity {
+        font-size: 1.8rem;
+        opacity: 0.5;
+        text-transform: none;
+        color: #8D8F9A;
+    }
+}
+
+.price {
+    font-weight: 500;
+    font-size: 1.8rem;
+
+
+    &__opacity {
+        font-weight: 500;
+        font-size: 1.8rem;
+        opacity: 0.5;
+    }
 }

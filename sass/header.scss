@@ -4,21 +4,47 @@
     height: 20px;
     left: 0%;
     right: 0%;
-    // top: calc(50% - 20px/2 - 16px);
-    
-    font-family: 'Raleway';
-    // font-style: normal;
-    // font-weight: 600;
-    // font-size: 16px;
-    // line-height: 100%;
-    /* identical to box height, or 19px */
-    
+    top: calc(50% - 20px/2 - 16px);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase; 
+    // color: var( --color-active);
+}
+.ecommerce-header {
     display: flex;
-    // align-items: flex-start;
-    // text-align: right;
-    text-transform: uppercase;
+    gap: 3.2rem;
+    list-style-type: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    &__list-header {
+       
+
+    }
+}
+li:hover {
+    color: var(--color-active);
+}
+
+.header-nav {
+        display: flex;
+        position: absolute;
+        margin: 2rem;
+        
+        // top: calc(50% - 20px/2 - 16px);
+}
+
+option, option:hover {
+        // color: var(--color-selected);
+        font-family: 'Raleway', sans-serif;
+        background-color: var(--color-selected);
+    }
+
+select {
+    position: absolute;
+    width: 11.4rem;
+    outline: 0rem;
+    border: 0rem;
     
-    /* --c-primary */
+    // height: 16.9rem;
+    // left: 120.8rem;
     
-    // color: #5ECE7B;
     }

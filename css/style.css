@@ -35,23 +35,95 @@ body {
   height: 20px;
   left: 0%;
   right: 0%;
-  font-family: 'Raleway';
-  /* identical to box height, or 19px */
-  display: flex;
-  text-transform: uppercase;
-  /* --c-primary */ }
-
-.category__img-size {
-  width: 35.6rem;
-  height: 33.8rem;
-  top: -0.5rem; }
-
-.overlay {
-  text-transform: uppercase;
-  font-size: 2.4rem;
+  top: calc(50% - 20px/2 - 16px);
   font-family: 'Raleway', sans-serif;
-  color: #8D8F9A;
+  text-transform: uppercase; }
+
+.ecommerce-header {
+  display: flex;
+  gap: 3.2rem;
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: 600; }
+
+li:hover {
+  color: var(--color-active); }
+
+.header-nav {
+  display: flex;
+  position: absolute;
+  margin: 2rem; }
+
+option, option:hover {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--color-selected); }
+
+select {
+  position: absolute;
+  width: 11.4rem;
+  outline: 0rem;
+  border: 0rem; }
+
+.section {
+  margin: 10rem; }
+  .section__name-category {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 160%; }
+
+.category {
+  display: flex;
+  gap: 2.5rem;
+  column-gap: 2rem;
+  row-gap: 1rem; }
+  .category__img {
+    margin: 10.3rem 0rem 0rem 0rem;
+    position: relative; }
+    .category__img-overlay {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      font-family: 'Raleway', sans-serif;
+      color: #8D8F9A;
+      line-height: 160%;
+      font-weight: 400;
+      align-items: center;
+      display: flex;
+      position: absolute;
+      left: 25.42%;
+      right: 25.71%;
+      top: 44.24%;
+      bottom: 43.94%; }
+    .category__img-size_opacity {
+      width: 35.6rem;
+      height: 33.8rem;
+      top: -0.5rem;
+      opacity: 0.5; }
+    .category__img-size {
+      width: 35.6rem;
+      height: 33.8rem;
+      top: -0.5rem; }
+
+.item_name {
+  font-size: 1.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 300;
   line-height: 160%;
-  font-weight: 400;
-  align-items: center;
-  display: flex; }
+  text-transform: none;
+  display: flex;
+  align-items: center; }
+  .item_name__opacity {
+    font-size: 1.8rem;
+    opacity: 0.5;
+    text-transform: none;
+    color: #8D8F9A; }
+
+.price {
+  font-weight: 500;
+  font-size: 1.8rem; }
+  .price__opacity {
+    font-weight: 500;
+    font-size: 1.8rem;
+    opacity: 0.5; }
