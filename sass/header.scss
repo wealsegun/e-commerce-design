@@ -1,50 +1,114 @@
 .header {
-    
     position: static;
     height: 20px;
     left: 0%;
     right: 0%;
     top: calc(50% - 20px/2 - 16px);
-    font-family: 'Raleway', sans-serif;
+    font-family:var(--font-family);
     text-transform: uppercase; 
     // color: var( --color-active);
 }
 .ecommerce-header {
     display: flex;
-    gap: 3.2rem;
+    // gap: 3.2rem;
     list-style-type: none;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
+    gap: 2.4rem;
     &__list-header {
-       
-
+              
+        gap: 3.2rem;
+        list-style-type: none;
+        
+    }
+    &__currency-list {
+        position: absolute;
+        width: 114px;
+        height: 169px;
+        left: 1248px;
+        top: 65px;
     }
 }
-li:hover {
+
+.border,.border:hover, .border:active {
+    border-bottom: .2rem solid var(--color-active);
+    align-self: stretch;
+}
+li:hover, li:active {
     color: var(--color-active);
 }
 
 .header-nav {
         display: flex;
-        position: absolute;
         margin: 2rem;
-        
-        // top: calc(50% - 20px/2 - 16px);
+        justify-content: space-between;
 }
 
-option, option:hover {
-        // color: var(--color-selected);
-        font-family: 'Raleway', sans-serif;
-        background-color: var(--color-selected);
-    }
+
 
 select {
     position: absolute;
-    width: 11.4rem;
     outline: 0rem;
     border: 0rem;
-    
-    // height: 16.9rem;
-    // left: 120.8rem;
-    
+    font-family: var(--font-family);
+    font-weight: 500;
+    background-color: var(--color-primary);    
     }
+
+    // select:hover, option:hover  {
+    //     background-color: var(--color-selected);
+    // }
+    // select:focus > option:hover { 
+    //     background: var(--color-selected) !important;
+    // }
+
+    option, option:hover, option:active, select:focus > option:hover ,
+    select.decorated option:hover{
+        // color: var(--color-selected);
+        font-family: var(--font-family);
+        background-color: var(--color-selected);
+    }
+
+
+    .dorpview:hover {
+        cursor: pointer;
+    }
+
+.currency {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: var(--color-active-none);
+    &__resize {
+        // width: 1rem;
+    }
+}
+.menu-container {
+    display: flex;
+    gap: 3.2rem;
+    list-style-type: none;
+}
+.currency-cart {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -1.2rem;
+    right: -0.4rem;
+}
+
+
+// Cart Drop down Menu
+.dropdown-cart-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}

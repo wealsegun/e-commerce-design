@@ -4,7 +4,8 @@
   --color-primary-dark:rgba(57, 55, 72, 0.22);
   --color-active: #5ECE7B;
   --color-active-none: #1D1F22;
-  --color-selected: #EEEEEE; }
+  --color-selected: #EEEEEE;
+  --font-family:  'Raleway', sans-serif; }
 
 * {
   margin: 0;
@@ -24,11 +25,22 @@ html {
     font-size: 50%; } }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.6;
-  background-image: linear-gradient(to right bottom, var(--color-primary));
-  min-height: 100vh; }
+  margin: 0rem 10rem 0rem 10rem; }
+
+.relative {
+  position: relative; }
+
+.margin-left {
+  margin-left: 8rem; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-active-none); }
 
 .header {
   position: static;
@@ -36,38 +48,88 @@ body {
   left: 0%;
   right: 0%;
   top: calc(50% - 20px/2 - 16px);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family);
   text-transform: uppercase; }
 
 .ecommerce-header {
   display: flex;
-  gap: 3.2rem;
   list-style-type: none;
   font-size: 1.6rem;
-  font-weight: 600; }
+  font-weight: 500;
+  gap: 2.4rem; }
+  .ecommerce-header__list-header {
+    gap: 3.2rem;
+    list-style-type: none; }
+  .ecommerce-header__currency-list {
+    position: absolute;
+    width: 114px;
+    height: 169px;
+    left: 1248px;
+    top: 65px; }
 
-li:hover {
+.border, .border:hover, .border:active {
+  border-bottom: 0.2rem solid var(--color-active);
+  align-self: stretch; }
+
+li:hover, li:active {
   color: var(--color-active); }
 
 .header-nav {
   display: flex;
-  position: absolute;
-  margin: 2rem; }
-
-option, option:hover {
-  font-family: 'Raleway', sans-serif;
-  background-color: var(--color-selected); }
+  margin: 2rem;
+  justify-content: space-between; }
 
 select {
   position: absolute;
-  width: 11.4rem;
   outline: 0rem;
-  border: 0rem; }
+  border: 0rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  background-color: var(--color-primary); }
+
+option, option:hover, option:active, select:focus > option:hover,
+select.decorated option:hover {
+  font-family: var(--font-family);
+  background-color: var(--color-selected); }
+
+.dorpview:hover {
+  cursor: pointer; }
+
+.currency {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--color-active-none); }
+
+.menu-container {
+  display: flex;
+  gap: 3.2rem;
+  list-style-type: none; }
+
+.currency-cart {
+  display: flex;
+  list-style-type: none;
+  justify-content: center; }
+
+.cart-count {
+  position: absolute;
+  top: -1.2rem;
+  right: -0.4rem; }
+
+.dropdown-cart-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
 
 .section {
-  margin: 10rem; }
+  margin-top: 10rem; }
   .section__name-category {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 4.2rem;
@@ -79,12 +141,13 @@ select {
   column-gap: 2rem;
   row-gap: 1rem; }
   .category__img {
-    margin: 10.3rem 0rem 0rem 0rem;
-    position: relative; }
+    margin-top: 10.3rem;
+    position: relative;
+    width: 100%; }
     .category__img-overlay {
       text-transform: uppercase;
       font-size: 2.4rem;
-      font-family: 'Raleway', sans-serif;
+      font-family: var(--font-family);
       color: #8D8F9A;
       line-height: 160%;
       font-weight: 400;
@@ -96,18 +159,16 @@ select {
       top: 44.24%;
       bottom: 43.94%; }
     .category__img-size_opacity {
-      width: 35.6rem;
-      height: 33.8rem;
+      width: 100%;
       top: -0.5rem;
       opacity: 0.5; }
     .category__img-size {
-      width: 35.6rem;
-      height: 33.8rem;
+      width: 100%;
       top: -0.5rem; }
 
 .item_name {
   font-size: 1.8rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
